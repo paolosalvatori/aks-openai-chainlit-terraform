@@ -83,7 +83,7 @@ This project provides a set of Terraform modules to deploy thw following resourc
   - Azure Key Vault
   - Azure Storage Account
   - API Server when deploying a private AKS cluster.
-- [Azure Private DNDS Zones](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/private_dns_zone): an [Azure Private DNS Zone](https://docs.microsoft.com/en-us/azure/dns/private-dns-overview) is created for each of the following resources:
+- [Azure Private DNS Zones](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/private_dns_zone): an [Azure Private DNS Zone](https://docs.microsoft.com/en-us/azure/dns/private-dns-overview) is created for each of the following resources:
   - Azure OpenAI Service
   - Azure Container Registry
   - Azure Key Vault
