@@ -30,7 +30,7 @@ variable "private_cluster_enabled" {
 }
 
 variable "azure_rbac_enabled" {
-  description = "(Optional) Is Role Based Access Control based on Azure AD enabled?"
+  description = "(Optional) Is Role Based Access Control based on Entra enabled?"
   default     = true
   type        = bool
 }
@@ -274,7 +274,7 @@ variable "vertical_pod_autoscaler_enabled" {
 }
 
 variable "workload_identity_enabled" {
-  description = "(Optional) Specifies whether Azure AD Workload Identity should be enabled for the Cluster. Defaults to false."
+  description = "(Optional) Specifies whether Entra Workload Identity should be enabled for the Cluster. Defaults to false."
   type        = bool
   default     = true
 }

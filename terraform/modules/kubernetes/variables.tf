@@ -11,7 +11,7 @@ variable "kubernetes_config_context" {
 }
 
 variable "tenant_id" {
-  description = "(Required) Specifies the Azure AD tenant id."
+  description = "(Required) Specifies the Entra tenant id."
   type = string
 }
 
