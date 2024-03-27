@@ -30,7 +30,7 @@ variable "private_cluster_enabled" {
 }
 
 variable "azure_rbac_enabled" {
-  description = "(Optional) Is Role Based Access Control based on Entra enabled?"
+  description = "(Optional) Is Role Based Access Control based on Azure AD enabled?"
   default     = true
   type        = bool
 }
@@ -89,13 +89,13 @@ variable "system_node_pool_availability_zones" {
 
 variable "network_dns_service_ip" {
   description = "Specifies the DNS service IP"
-  default     = "10.2.0.10"
+  default     = "'172.16.0.10"
   type        = string
 }
 
 variable "network_service_cidr" {
   description = "Specifies the service CIDR"
-  default     = "10.2.0.0/24"
+  default     = "172.16.0.0/16"
   type        = string
 }
 
@@ -274,7 +274,7 @@ variable "vertical_pod_autoscaler_enabled" {
 }
 
 variable "workload_identity_enabled" {
-  description = "(Optional) Specifies whether Entra Workload Identity should be enabled for the Cluster. Defaults to false."
+  description = "(Optional) Specifies whether Azure AD Workload Identity should be enabled for the Cluster. Defaults to false."
   type        = bool
   default     = true
 }
